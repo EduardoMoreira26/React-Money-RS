@@ -1,10 +1,8 @@
 import { Container } from "./styles";
-// import { useTransactions } from '../../hooks/useTransactions';
 import { useEffect } from "react";
 import {api} from "../services/api"
 
 export function TransactionTable() {
-  // const { transactions } = useTransactions();
 
   useEffect(() => {
     api.get('transactions')
